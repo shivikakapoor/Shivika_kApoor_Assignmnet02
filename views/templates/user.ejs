@@ -1,0 +1,7 @@
+<div class="d-flex align-items-center justify-content-between border p-2 mb-2 rounded">
+  <span><strong><%= user.name %></strong> (<%= user.user_type %>)</span>
+  <div>
+    <a href="/promoteUser?name=<%= user.name %>" class="btn btn-success btn-sm me-1">Promote to Admin</a>
+    <a href="/demoteUser?name=<%= user.name %>" class="btn btn-danger btn-sm">Demote to User</a>
+  </div>
+</div>

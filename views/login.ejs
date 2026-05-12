@@ -1,0 +1,20 @@
+<%- include('templates/header') %>
+
+<h2>Log In</h2>
+
+<% if (typeof error !== 'undefined' && error) { %>
+  <p class="text-danger"><%= error %></p>
+  <a href="/login">Try again</a>
+<% } else { %>
+  <form action="/loginSubmit" method="POST" style="max-width: 400px;">
+    <div class="mb-3">
+      <input name="email" type="email" class="form-control" placeholder="Email" required />
+    </div>
+    <div class="mb-3">
+      <input name="password" type="password" class="form-control" placeholder="Password" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+<% } %>
+
+<%- include('templates/footer') %>

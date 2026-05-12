@@ -1,0 +1,19 @@
+<%- include('templates/header') %>
+
+<h1>Hello, <%= user.name %>.</h1>
+
+<div class="row mt-3">
+  <div class="col-12 col-md-4 mb-3">
+    <img src="/img1.jpg" class="img-fluid rounded" alt="image 1" />
+  </div>
+  <div class="col-12 col-md-4 mb-3">
+    <img src="/img2.jpg" class="img-fluid rounded" alt="image 2" />
+  </div>
+  <div class="col-12 col-md-4 mb-3">
+    <img src="/img3.jpg" class="img-fluid rounded" alt="image 3" />
+  </div>
+</div>
+
+<a href="/logout" class="btn btn-secondary">Sign Out</a>
+
+<%- include('templates/footer') %>
